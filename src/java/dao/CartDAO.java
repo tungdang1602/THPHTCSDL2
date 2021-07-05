@@ -66,8 +66,6 @@ public class CartDAO extends DBConnecttion<Account> {
         return count;
     }
 
-    //Function returns a boolean to inform whether the product is added to cart or not
-    //If Product is out of stock
     public boolean addToCart(int userID, int productID, int amount) {
         //Check if Product to add already has at least 1 in cart
         CartDAO dao = new CartDAO();

@@ -50,7 +50,6 @@ public class PagingManagerControl extends HttpServlet {
         PrintWriter out = response.getWriter();
         for (Product o : list) {
             //Trả về những khối div -> Ko in ra từng cái o, mà in ra cả 1 khối div
-            //Copy bên home.jsp rồi sửa: sửa những cái ${} thành " + o.get... + "
             out.println("<div class=\"col-12 col-md-6 col-lg-4\">\n" +
 "                                <div class=\"card\">\n" +
 "                                    <img class=\"card-img-top\" src=\"image/" + o.getImageLink() + "\" alt=\"Card image cap\">\n" +
